@@ -1,0 +1,16 @@
+<div class="project-card" [routerLink]="link">
+    <img [src]="imageUrl" [alt]="title" class="project-image" />
+    <div class="project-info">
+        <div class="text">
+            <h3>{{ title }}</h3>
+            @if (subtitle) {
+            <p>{{ subtitle }}</p>
+            }
+        </div>
+        <div class="icon">
+            <img class="icon-default" src="/assets/arrow.png" alt="Arrow">
+            <img class="icon-hover" src="/assets/icon-color.png" alt="Arrow">
+        </div>
+
+    </div>
+</div>

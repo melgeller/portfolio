@@ -1,0 +1,33 @@
+.primary-button {
+  background-color: #fff;
+  text-decoration: none;
+  color: #131313;
+  border: none;
+  padding: 12px 24px;
+  font-size: 20px;
+  cursor: pointer;
+  border-radius: 8px;
+  transition: background-color 0.3s ease;
+  font-family: 'Outfit', sans-serif;
+  font-weight: 200;
+  &:hover {
+    background-color: #F182A7;
+  }
+}
+
+.secondary-button {
+  background-color: transparent;
+  color: #fff;
+  text-decoration: none;
+  border: 1px solid #5F5F5F;
+  padding: 12px 24px;
+  font-size: 20px;
+  cursor: pointer;
+  border-radius: 8px;
+  transition: 0.3s ease;
+  font-family: 'Outfit', sans-serif;
+ font-weight: 200;
+  &:hover {
+     border: 1px solid #F182A7;
+  }
+}

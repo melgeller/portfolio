@@ -1,0 +1,80 @@
+.project-card {
+  display: flex;
+  flex-direction: column;
+  text-align: start;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+  padding: 50px 40px;
+  transition: 0.3s;
+  background-color: #3b3b3ba2;
+  border-radius: 12px;
+  width: calc(100% - 80px);
+
+
+  .project-image {
+    width: 100%;
+    height: auto;
+    max-height: 330px;
+    border-radius: 12px;
+    object-fit: cover;
+    object-position: top;
+    margin-bottom: 24px;
+  }
+
+  .project-info {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+
+    h3 {
+      font-size: 24px;
+      margin: 0;
+      color: white;
+      font-weight: 300;
+      margin-bottom: 10px;
+    }
+
+    p {
+      font-size: 16px;
+      color: white;
+      font-weight: 200;
+      margin: 0;
+    }
+
+    .icon {
+      width: 24px;
+      height: 20px;
+      margin-left: auto;
+      cursor: pointer;
+      transition: 0.3s;
+      position: relative;
+
+      .icon-default,
+      .icon-hover {
+        width: 24px;
+        height: 20px;
+        position: absolute;
+        transition: opacity 0.2s;
+      }
+
+      .icon-hover {
+        opacity: 0;
+      }
+
+    }
+
+    &:hover {
+      background-color: #242424a2;
+
+      .icon-default {
+        opacity: 0;
+      }
+
+      .icon-hover {
+        opacity: 1;
+      }
+    }
+  }
+
+
+}

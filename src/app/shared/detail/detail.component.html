@@ -1,0 +1,62 @@
+<div class="project-detail">
+    <div class="detail">
+        <div class="pic">
+            <img src="{{ picUrl }}" alt="{{ title }}">
+        </div>
+        <div class="content-detail">
+            <div class="title">
+                <div class="icon" routerLink="/projects">
+                    <img class="icon-default" src="/assets/arrow.png" alt="Arrow">
+                    <img class="icon-hover" src="/assets/icon-color.png" alt="Arrow">
+                </div>
+                <div class="text">
+                    <h2>{{ title }}</h2>
+                    <h3>{{ subtitle }}</h3>
+                </div>
+            </div>
+            <div class="description-detail">
+                <div class="left">
+                    <h3>Context</h3>
+                    <p>{{ context }}</p>
+                    <h3>What I built</h3>
+                    <p>{{ built }}</p>
+                    <h3>Key decisions</h3>
+                    @for (key of keys; track key) {
+                    <p>{{ key }}</p>
+                    }
+                    <h3>Implementation</h3>
+                    @for (impl of implementation; track impl) {
+                    <li class="list">{{ impl }}</li>
+                    }
+                    <h3>Result</h3>
+                    <p>{{ result }}</p>
+                </div>
+                <div class="right">
+                    <h3>Role</h3>
+                    <p>{{ role }}</p>
+                    <h3>Tech</h3>
+                    @for (t of tech; track t) {
+                    <li class="list">{{ t }}</li>
+                    }
+                    <h3>Platform</h3>
+                    @for (p of platform; track p) {
+                    <p>{{ p }}</p>
+                    }
+                    <h3>Links</h3>
+                    @for (l of links; track l) {
+                    <a>{{ l }}</a>
+                    }
+                </div>
+            </div>
+            <div class="photo-detail">
+                <h3>Visual Details</h3>
+                <div class="photo">
+                    <img src="{{ detail1 }}" alt="{{ title }}">
+                    <img src="{{ detail2 }}" alt="{{ title }}">
+                    <img src="{{ detail3 }}" alt="{{ title }}">
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>

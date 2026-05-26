@@ -1,0 +1,31 @@
+.main-content{
+    padding: 100px 150px;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    h1{
+      font-size: 36px;
+      font-weight: 200;
+        color: #fff;  
+    }
+    .projects-content{
+      display: flex;
+      gap: 24px;
+      margin-top: 50px;
+      flex-wrap: wrap;
+      .project{
+        width: calc(50% - 12px);
+      }
+    }
+    header{
+      display: flex;
+      width: 100%;
+      justify-content: space-between;
+      align-items: center;
+    }
+}
+
+:host {
+  display: block;
+  width: 100%;
+}

@@ -1,0 +1,19 @@
+<main class="main-content">
+    <header>
+        <h1>Projects</h1>
+        @if(selectedProjectData) {
+        <button class="primary-button" routerLink="/projects">
+            Back
+        </button>
+        }
+    </header>
+    @if(!selectedProjectData){
+    <section class="projects-content">
+        <app-project class="project" *ngFor="let project of projects" [title]="project.title"
+            [subtitle]="project.subtitle" [imageUrl]="project.imageUrl" [link]="'/projects/' + project.slug">
+        </app-project>
+    </section>
+    } @else {
+    <app-detail [title]="selectedProjectData.title" [subtitle]="selectedProjectData.subtitle" [context]="selectedProjectData.context" [built]="selectedProjectData.built" [keys]="selectedProjectData.keys" [implementation]="selectedProjectData.implementation" [result]="selectedProjectData.result" [role]="selectedProjectData.role" [tech]="selectedProjectData.tech" [platform]="selectedProjectData.platform" [links]="selectedProjectData.links" [picUrl]="selectedProjectData.picUrl" [detail1]="selectedProjectData.detail1" [detail2]="selectedProjectData.detail2" [detail3]="selectedProjectData.detail3"></app-detail>
+    }
+</main>

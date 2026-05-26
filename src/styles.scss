@@ -1,1 +1,24 @@
-/* You can add global styles to this file, and also import other style files */
+@use './app/styles/_base_dir' as *;
+
+html, body {
+    background-color: #141414;
+    font-family: 'Outfit', sans-serif;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    scrollbar-width: thin;
+    scrollbar-color: #2c2c2c #141414;
+}
+
+.layout {
+  min-width: 100%;
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  flex: 1;
+  display: flex;
+}
