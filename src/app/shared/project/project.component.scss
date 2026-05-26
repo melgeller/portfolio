@@ -66,13 +66,19 @@
     &:hover {
       background-color: #242424a2;
 
-      .icon-default {
-        opacity: 0;
+      .project-info {
+        .icon {
+          .icon-default {
+            opacity: 0;
+          }
+
+          .icon-hover {
+            opacity: 1;
+          }
+        }
       }
 
-      .icon-hover {
-        opacity: 1;
-      }
+
     }
   }
 
